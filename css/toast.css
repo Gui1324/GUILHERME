@@ -1,0 +1,24 @@
+#exibe {
+    visibility: hidden;
+    min-width: 250px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px;
+    position: fixed;
+    left: 50%;
+    top: 30px;
+}
+
+#exibe.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from{top: 0; opacity:0;}
+    to{top: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from{top: 30px; opacity: 1;}
+}
